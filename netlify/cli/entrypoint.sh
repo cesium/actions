@@ -8,7 +8,9 @@
 #   fi
 # EOF
 
-OUTPUT=$(sh -c "npm run deploy")
+npm ci
+
+OUTPUT=$(sh -c "npm run preview")
 
 NETLIFY_OUTPUT=$(echo "$OUTPUT")
 NETLIFY_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_-]*(--)[a-zA-Z0-9./?=_-]*') #Unique key: --
