@@ -8,7 +8,7 @@
 #   fi
 # EOF
 
-OUTPUT=$(sh -c "netlify deploy --build")
+OUTPUT=$(sh -c "npm run deploy")
 
 NETLIFY_OUTPUT=$(echo "$OUTPUT")
 NETLIFY_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_-]*(--)[a-zA-Z0-9./?=_-]*') #Unique key: --
