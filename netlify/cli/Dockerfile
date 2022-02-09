@@ -1,8 +1,8 @@
 FROM node:16-alpine
 
 LABEL version="0.1.0"
-LABEL repository="http://github.com/cesium/actions"
-LABEL homepage="http://github.com/cesium/actions/cli"
+LABEL repository="https://github.com/cesium/actions"
+LABEL homepage="https://github.com/cesium/actions"
 LABEL maintainer="CeSIUM"
 LABEL "com.github.actions.name"="Netlify CLI"
 LABEL "com.github.actions.description"="Wraps the Netlify CLI to enable common Netlify commands"
