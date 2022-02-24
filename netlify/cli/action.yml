@@ -1,0 +1,22 @@
+name: 'Netlify CLI'
+description: 'Build and deploy apps on Netlify using the CLI'
+
+inputs:
+  args:
+    description: 'CLI arguments'
+    required: true
+    default: 'deploy'
+outputs:
+  NETLIFY_OUTPUT:
+    description: 'The execution output'
+  NETLIFY_URL:
+    description: 'The Netlify'
+  NETLIFY_LOGS_URL:
+    description: 'The Netlify logs URL'
+  NETLIFY_LIVE_URL:
+    description: 'The Netlify live deploy URL'
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.args }}
