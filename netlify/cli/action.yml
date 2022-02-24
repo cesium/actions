@@ -1,6 +1,10 @@
 name: 'Netlify CLI'
 description: 'Build and deploy apps on Netlify using the CLI'
 
+branding:
+  icon: 'upload-cloud'
+  color: 'green'
+
 inputs:
   args:
     description: 'CLI arguments'
