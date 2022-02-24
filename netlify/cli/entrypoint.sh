@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-OUTPUT=$(${BUILD_COMMAND:-echo} && netlify $*)
+OUTPUT=$(netlify $*)
 
 NETLIFY_OUTPUT=$(echo "$OUTPUT")
 NETLIFY_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_-]*(--)[a-zA-Z0-9./?=_-]*')
